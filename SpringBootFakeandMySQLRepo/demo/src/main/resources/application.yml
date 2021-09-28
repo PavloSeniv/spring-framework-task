@@ -1,6 +1,0 @@
-app:
-  datasource:
-    jdbc-url: jdbc:mysql://localhost:3306/spring-boot?serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8
-    username:
-    password:
-    pool-size: 30
