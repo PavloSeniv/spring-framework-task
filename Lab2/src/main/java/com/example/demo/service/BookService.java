@@ -7,33 +7,47 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
 public class BookService {
-    public final BookDao bookDao;
+    private final BookDao bookDao;
+
     @Autowired
-    public BookService(@Qualifier("bookFakeDao") BookDao bookDao) {
+    public BookService(@Qualifier("mysqlDao") BookDao bookDao) {
         this.bookDao = bookDao;
     }
 
-    public int create(Book book) {
-        return bookDao.create(book);
+    public int createBook(Book book) {
+        return bookDao.createBook(book);
     }
 
-    public List<Book> getAll() {
-        return this.bookDao.getAll();
+    public List<Book> getAllBook() {
+        return this.bookDao.selectAllBook();
     }
 
-    public int deleteById(UUID id) {
-        return bookDao.deleteById(id);
+    public Optional<Book> getBookById(UUID id) {
+        return bookDao.selectBookById(id);
+    }
+
+    public Optional<Book> getBookByAuthor(String author) {
+        return bookDao.selectBookByAuthor(author);
+    }
+
+    public Optional<Book> getBookByPublish(String publish) {
+        return bookDao.selectBookByPublish(publish);
+    }
+
+    public int deleteBook(UUID id) {
+        return bookDao.deleteBookById(id);
+    }
+
+    public int updateBook(UUID id, Book newBook) {
+        return bookDao.updateBookById(id, newBook);
     }
 
     public int deleteAll() {
         return bookDao.deleteAll();
-    }
-
-    public int updateById(UUID id, Book newBook) {
-        return bookDao.updateById(id, newBook);
     }
 }

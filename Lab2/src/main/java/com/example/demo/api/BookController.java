@@ -23,44 +23,44 @@ public class BookController {
 
     @PostMapping
     public void createBook(@Valid @NonNull @RequestBody Book book) {
-        bookService.create(book);
+        bookService.createBook(book);
+    }
+
+    @GetMapping
+    public List<Book> getAllBook() {
+        return bookService.getAllBook();
     }
 
     @GetMapping(path = "/{id}")
-    public Book getById(@PathVariable("id") UUID id) {
-        return bookService.bookDao.getById(id)
+    public Book getBookById(@PathVariable("id") UUID id) {
+        return bookService.getBookById(id)
                 .orElse(null);
     }
 
     @GetMapping(path = "/author")
-    public Book getByAuthor(@PathParam("author") String author) {
-        return bookService.bookDao.getByAuthor(author)
+    public Book getBookByAuthor(@PathParam("author") String author) {
+        return bookService.getBookByAuthor(author)
                 .orElse(null);
     }
 
     @GetMapping(path = "/publish")
     public Book getByPublish(@PathParam("publish") String publish) {
-        return bookService.bookDao.getByPublish(publish)
+        return bookService.getBookByPublish(publish)
                 .orElse(null);
     }
 
-    @GetMapping
-    public List<Book> getAllBooks() {
-        return bookService.getAll();
-    }
-
     @DeleteMapping(path = "/{id}")
-    public void deleteById(@PathVariable("id") UUID id) {
-        bookService.deleteById(id);
+    public void deleteBookById(@PathVariable("id") UUID id) {
+        bookService.deleteBook(id);
     }
 
+    @PutMapping(path = "/{id}")
+    public void updateBook(@PathVariable("id") UUID id, @Valid @NonNull @RequestBody Book book) {
+        bookService.updateBook(id, book);
+    }
     @DeleteMapping
     public void deleteAll() {
         bookService.deleteAll();
     }
 
-    @PutMapping(path = "/{id}")
-    public void updateById(@PathVariable("id") UUID id, @RequestBody Book book) {
-        bookService.updateById(id, book);
-    }
 }

@@ -19,6 +19,7 @@ public class Book {
                 @JsonProperty("year") Integer year,
                 @JsonProperty("publish") String publish,
                 @JsonProperty("pages") Integer pages) {
+
         this.id = id;
         this.name = name;
         this.author = author;

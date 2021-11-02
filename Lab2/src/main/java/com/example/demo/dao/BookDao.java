@@ -7,22 +7,24 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface BookDao {
-    int create(UUID id, Book book);
-
-    default int create(Book book) {
+    int createBook(UUID id, Book book);
+	
+    default int createBook(Book book) {
         UUID id = UUID.randomUUID();
-        return create(id, book);
+        return createBook(id, book);
     }
 
-    List<Book> getAll();
+    List<Book> selectAllBook();
 
-    Optional<Book> getById(UUID id);
-    Optional<Book> getByAuthor(String author);
-    Optional<Book> getByPublish(String publish);
+    Optional<Book> selectBookById(UUID id);
 
-    int deleteById(UUID id);
+    Optional<Book> selectBookByAuthor(String author);
+
+    Optional<Book> selectBookByPublish(String publish);
 
     int deleteAll();
 
-    int updateById(UUID id, Book book);
+    int deleteBookById(UUID id);
+
+    int updateBookById(UUID id, Book book);
 }

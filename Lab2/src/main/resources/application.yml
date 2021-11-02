@@ -1,6 +1,6 @@
 app:
   datasource:
-    jdbc-url: jdbc:mysql://localhost:3306/SpringLaba1DB?serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8
-    username: SpringLaba1DB
-    password: D8a6TYMCVOiAHVXQ
+    jdbc-url: jdbc:mysql://localhost:3306/springlaba2db?serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8
+    username: springlaba2db
+    password: wu9BPlu12nltIGp1
     pool-size: 30
