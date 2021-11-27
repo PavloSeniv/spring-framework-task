@@ -1,0 +1,6 @@
+app:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/springlaba4db?serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8
+    username: springlaba4db
+    password: quGqkpn9vFFAWRpB
+    pool-size: 30
