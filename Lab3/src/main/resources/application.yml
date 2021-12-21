@@ -1,13 +1,6 @@
-resources:
-  data:
-    books-path: "test-data/books.json"
-spring:
+app:
   datasource:
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
-    username: sa
-    password: password
-    database-platform: org.hibernate.dialect.H2Dialect
-  h2:
-    console:
-      enabled: true
+    jdbc-url: jdbc:mysql://localhost:3306/springlaba3db?serverTimezone=UTC&useUnicode=yes&characterEncoding=UTF-8
+    username: springlaba3db
+    password: z*bG3YOQy18nKoj]
+    pool-size: 30
