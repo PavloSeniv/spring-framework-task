@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Eloquent JavaScript, Third Edition",
+    "author": "Marijn Haverbeke",
+    "publishYear": "2018",
+    "publisher": "No Starch Press",
+    "pages": 472
+  },
+  {
+    "name": "Practical Modern JavaScript",
+    "author": "Nicolás Bevacqua",
+    "publishYear": "2017",
+    "publisher": "O'Reilly Media",
+    "pages": 334
+  },
+  {
+    "name": "Understanding ECMAScript 6",
+    "author": "Nicholas C. Zakas",
+    "publishYear": "2016",
+    "publisher": "No Starch Press",
+    "pages": 352
+  },
+  {
+    "name": "Speaking JavaScript",
+    "author": "Axel Rauschmayer",
+    "publishYear": "2014",
+    "publisher": "O'Reilly Media",
+    "pages": 460
+  },
+  {
+    "name": "Learning JavaScript Design Patterns",
+    "author": "Addy Osmani",
+    "publishYear": "2012",
+    "publisher": "O'Reilly Media",
+    "pages": 254
+  },
+  {
+    "name": "You Don't Know JS Yet",
+    "author": "Kyle Simpson",
+    "publishYear": "2020",
+    "publisher": "Independently published",
+    "pages": 143
+  },
+  {
+    "name": "Pro Git",
+    "author": "Scott Chacon and Ben Straub",
+    "publishYear": "2014",
+    "publisher": "Apress; 2nd edition",
+    "pages": 458
+  },
+  {
+    "name": "Rethinking Productivity in Software Engineering",
+    "author": "Caitlin Sadowski, Thomas Zimmermann",
+    "publishYear": "2019",
+    "publisher": "Apress",
+    "pages": 310
+  }
+]
