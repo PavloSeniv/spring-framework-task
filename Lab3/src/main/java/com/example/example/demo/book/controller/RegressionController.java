@@ -2,7 +2,6 @@ package com.example.example.demo.book.controller;
 
 import com.example.example.demo.book.api.RegressionApi;
 import com.example.example.demo.book.entity.Koefs;
-import com.example.example.demo.book.repository.KoefsRepository;
 import com.example.example.demo.book.service.KoefsService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;

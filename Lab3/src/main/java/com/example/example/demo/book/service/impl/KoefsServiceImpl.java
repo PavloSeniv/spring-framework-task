@@ -2,7 +2,7 @@ package com.example.example.demo.book.service.impl;
 
 import com.example.example.demo.book.entity.Koefs;
 import com.example.example.demo.book.entity.KoefsResponse;
-import com.example.example.demo.book.repository.KoefsRepository;
+import com.example.example.demo.book.repository.temp.KoefsRepository;
 import com.example.example.demo.book.service.KoefsService;
 import org.springframework.stereotype.Service;
 
@@ -15,8 +15,8 @@ public class KoefsServiceImpl implements KoefsService {
     }
 
     @Override
-    public Koefs addKoefs(Koefs koefs) {
-        return koefsRepository.save(koefs);
+    public Koefs addKoefs(Koefs book) {
+        return koefsRepository.save(book);
     }
 
     @Override
