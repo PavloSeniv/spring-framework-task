@@ -1,16 +1,6 @@
-CREATE TABLE `Book` (
+CREATE TABLE `Coefficients` (
 	`id` INT NOT NULL AUTO_INCREMENT,
-	`name` VARCHAR(50) DEFAULT '',
-	`author` VARCHAR(50) DEFAULT '',
-	`publishYear` VARCHAR(50) DEFAULT '',
-	`publisher` VARCHAR(50) DEFAULT '',
-	`pages` INT DEFAULT '0',
-	PRIMARY KEY (`id`)
-);
-
-CREATE TABLE `Koefs` (
-	`id` INT NOT NULL AUTO_INCREMENT,
-	`xKoefs` VARCHAR(255) DEFAULT '',
-	`yKoefs` VARCHAR(255) DEFAULT '',
+	`CoefficientsX` VARCHAR(255) DEFAULT '',
+	`CoefficientsY` VARCHAR(255) DEFAULT '',
 	PRIMARY KEY (`id`)
 );
